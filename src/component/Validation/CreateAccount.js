@@ -105,7 +105,7 @@ function CreateAccount() {
             <div className="mt-2">
               <p className="me-2  h5">Password </p>
               <input
-                type="text"
+                type="password"
                 name="password"
                 // required
                 value={password}

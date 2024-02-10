@@ -1,7 +1,7 @@
 function FormValidation(input) {
   const error = {};
 
-  const valid_name = /^[A-Z][a-z]+\s[A-Z][a-z]+$/;
+  const valid_name = /^[A-Za-z]+(?: [A-Za-z]+)?$/;
   const valid_email =
     /^[a-zA-Z0-9_.+]*[a-zA-Z][a-zA-Z0-9_.+]*@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
   const valid_mobile = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
