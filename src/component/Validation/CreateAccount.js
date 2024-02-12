@@ -25,12 +25,13 @@ function CreateAccount() {
   const submitform = async (event) => {
     event.preventDefault();
     seterrormsg(FormValidation(input));
-
-    let url = "https://empolye-portal.onrender.com/empolyee/register";
-    const { data } = await axios.post(url, input);
+    setLoading(true);
 
     try {
-      setLoading(true);
+    
+      let url = "https://empolye-portal.onrender.com/empolyee/register";
+    const { data } = await axios.post(url, input);
+
       if (data.success === true) {
         alert("Account Created Successfully");
         window.location.assign("/login");
