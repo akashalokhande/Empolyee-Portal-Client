@@ -27,10 +27,10 @@ function CreateAccount() {
     seterrormsg(FormValidation(input));
     setLoading(true);
 
-    try {
-      let url = "https://empolye-portal.onrender.com/empolyee/register";
-      const { data } = await axios.post(url, input);
+    let url = "https://empolye-portal.onrender.com/empolyee/register";
+    const { data } = await axios.post(url, input);
 
+    try {
       if (data.success === true) {
         alert("Account Created Successfully");
         window.location.assign("/login");
