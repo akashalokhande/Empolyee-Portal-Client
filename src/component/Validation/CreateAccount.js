@@ -28,9 +28,8 @@ function CreateAccount() {
     setLoading(true);
 
     try {
-    
       let url = "https://empolye-portal.onrender.com/empolyee/register";
-    const { data } = await axios.post(url, input);
+      const { data } = await axios.post(url, input);
 
       if (data.success === true) {
         alert("Account Created Successfully");

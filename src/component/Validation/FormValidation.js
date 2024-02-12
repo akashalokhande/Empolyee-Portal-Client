@@ -35,13 +35,13 @@ function FormValidation(input) {
   if (input.name === "") {
     error.name = "Name is requried";
   } else if (!valid_name.test(input.name)) {
-    error.name = "each name should first letter is alphabet";
+    error.name = "Please enter valid Name";
   }
 
   if (input.Email === "") {
     error.Email = "Email is requried";
   } else if (!valid_email.test(input.Email)) {
-    error.Email = "Please enter valid email";
+    error.Email = "Please enter valid Email";
   }
 
   return error;
